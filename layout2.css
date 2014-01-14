@@ -1,0 +1,42 @@
+#pageWrapper{
+	font:14px/1.4 'PT Sans Narrow', sans-serif;
+	width: 990px;
+  	height: 1000px;
+	background-color: #FFF;	
+}
+
+#header{
+	height: 127px;
+	width: 990px;
+}
+
+#logo{
+	position: relative;
+	top: 20px;
+	left: -270px;
+	width: 175px;
+	height: 175px;
+
+}
+
+#searchBar{
+	position: relative;
+	left: 750px;
+	top: -120px;
+	width: 300px;
+}
+
+#menuLinks{
+	position: relative;
+	font: bold 14px/14px sans-serif;
+}
+
+#websiteSlogan{
+	position: relative;
+	left:240px;
+	top:-100px;
+	font-family: "algerian";
+	font-size: 25px;
+	width: 400px;
+	height: 40px;
+}
