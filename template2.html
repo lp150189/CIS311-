@@ -1,47 +1,63 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="layout.css" />
-	<title>Pro-tek Website</title>
-
-
+	<title>Protek website</title>
+	<link rel = "stylesheet" type ="text/css" href= "layout2.css"/>
 </head>
-<body>
-	<div id = "pageWrapper" align = "center">
-		<div id = "header" align="left">
+<body align = "center">
+	<div id = "pageWrapper" >
+		<div id ="header" >
 			<img src = "./images/logo.jpg" alt= "the logo" width = "170px" height="109px" id ="logo"/>
-			<h1 id = "websiteTitle"></h1>
 			<p id = "websiteSlogan">Shop With Confidence </p>
-			<div id="SearchBox"><input type="text" name="search" size="25" /><input type="submit" value ="SEARCH"/></div>
-		</div><!-- End of Header-->
-		<div id ="menuBar">
-			<ul><li>Home</li>
- 				<li>About</li>
-  				<li>Portfolio
-    				<ul>
-      					<li>Web Design</li>
-      					<li>Web Development</li>
-      					<li>Illustrations</li>
-    				</ul>
-  				</li>
-  				<li>Blog</li>
-  				<li>Contact</li>
-			</ul>
-		</div><!-- end of Menubar-->
-		<div id = "slide" >
-			<img src="./images/pic1.jpg" name="slide" width="550" height="550" >
-			<script type="text/javascript" src="./script/script.js"></script>
+			<div id="searchBar">
+				<input name="w" type="text" onblur="if(this.value == '') this.value = 'Search by keyword';" onfocus="if(this.value == 'Search by keyword') this.value='';" value="Search by keyword" id="search" autocomplete="off"> <button type="button">GO</button>
+			</div>
+			<div id ="menuLinks">
+				<a href="working.html">Sign In</a>&nbsp;&nbsp;
+				<a href="working.html">Shop</a>&nbsp;&nbsp;
+				<a href="working.html">Contact</a>&nbsp;&nbsp;
+				<a href="working.html">Your Cart</a>&nbsp;&nbsp;
+			</div>
+		</div><!-- end Of header-->
+		<div id = "bigPicture">
+			<a href="working.html"><img width="700" src="images\50off.jpg" alt="some_text"></a>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-	</div><!-- End of pageWrapper -->
+		<div id = "notification">
+			<p><font face="algerian" size="80" color="brown">Free <br/>Shipping</font></p>
+			<p><font face="algerian" size="4" color="">Looking for the best<br/> clothes for your kids,<br/> you got to the right<br/> place</font></p>
+		</div><!--end of notification -->
+		<div id="pictureMenu">
+			<div id= "pic1">
+				<a href="working.html"><img width="250" src="images\boy.jpg" alt="some_text" border="1">
+				</a>
+			</div>
+			<div id= "pic2">
+				<a href="working.html"><img width="250" src="images\bboy.jpg" alt="some_text" border="1"></a>
+			</div>
+			<div id= "pic3">
+				<a href="working.html"><img width="250" src="images\girl.jpg" alt="some_text" border="1"></a>
+			</div>
+			<div id= "pic4">
+				<a href="working.html"><img width="250" src="images\bgirl.jpg" alt="some_text" border="1"></a>
+			</div>
+		</div><!--end of pictureMenu -->
+		<div id= "picMenuText">
+				<table>
+					<tr>
+						<td width ="250" align = "center" font face="algerian" size="4" color="pink">
+							<p><font face="algerian" size="8" color="red">Boy</p>
+						</td>
+						<td width ="250" align = "center">
+							<p><font face="algerian" size="8" color="red">Baby Boy</p>
+						</td>
+						<td width ="250" align = "center">
+							<p><font face="algerian" size="8" color="red">Girl</p>
+						</td>
+						<td width ="250" align = "center">
+							<p><font face="algerian" size="8" color="red">BabyGirl</p>
+						</td>
+					</tr>
+				</table>
+		</div>
+</div><!--end of PageWrapper -->
 </body>
 </html>

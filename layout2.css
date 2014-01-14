@@ -1,6 +1,6 @@
 #pageWrapper{
 	font:14px/1.4 'PT Sans Narrow', sans-serif;
-	width: 990px;
+	width: 1100px;
   	height: 1000px;
 	background-color: #FFF;	
 }
@@ -21,14 +21,16 @@
 
 #searchBar{
 	position: relative;
-	left: 750px;
-	top: -120px;
+	left: 650px;
+	top: -160px;
 	width: 300px;
 }
 
 #menuLinks{
 	position: relative;
 	font: bold 14px/14px sans-serif;
+	left:550px;
+	top:-180px;
 }
 
 #websiteSlogan{
@@ -40,3 +42,34 @@
 	width: 400px;
 	height: 40px;
 }
+#bigPicture{
+	position: relative;
+	top: 150px;
+}
+#notification{
+	position: relative;
+	z-index: 10;
+	left:950px;
+	text-align: left;
+	top: -300px;
+}
+
+#pictureMenu div{
+	display: inline;
+	position: relative;
+	left:150px;
+	top:-50px;
+}
+#picMenuText{
+	position: relative;
+	left:180px;
+	top:-50px;
+}
+#pic2{
+	position: absolute;
+	top:-50px;
+}
+#pic3{
+	height: 300px
+}
+
