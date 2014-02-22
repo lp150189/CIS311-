@@ -1,0 +1,188 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+   
+    <link rel="stylesheet" type="text/css" href="jquery.tzineClock/jquery.tzineClock.css" />
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/protek.css" rel="stylesheet">
+</head>
+
+<body onload="setInterval('updateClock()', 200);">
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id ="navigationBar">
+        <div class="container">
+            <div class="navbar-header" id ="navigationBar2">
+                
+                <h2 id="clock"></h2>
+            </div>
+            <div class="navbar-header" id ="navigationBar">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand" href="index.html">ProTek: shop with confidence</a>
+            </div>
+            
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown" >
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class = "listItem" ><a href="boy.html"><b><font color="#656565">Boy</font></b></a>
+                            </li>
+                            <li class = "listItem"><a href="bboy.html"><b><font color="#656565">Baby Boy</font></b></a>
+                            </li>
+                            <li class = "listItem"><a href="bgirl.html"><b><font color="#656565">Baby Girl</font></b></a>
+                            </li>
+                            <li class = "listItem"><a href="girl.html"><b><font color="#656565">Girl</font></b></a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li><a href="signIn.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div id="silde1" class="fill" style="background-image:url(images/slide1.jpg);"></div>
+                <div class="carousel-caption">
+                    <h1><font color="black">Free Shipping For orders over $25</font></h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(images/slide2.jpg);"></div>
+                <div class="carousel-caption">
+                    <h1><font color="black">Big Orders has discount</font></h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(images/slide3.jpg);"></div>
+                <div class="carousel-caption">
+                    <h1><font color="black">Big Orders has discount</font></a>
+                    </h1>
+                </div>
+            </div>
+            <div class="item ">
+                <div class="fill" style="background-image:url(images/slide4.jpg);"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+    
+
+    <div class="section-colored text-center" id="emailAsking">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12" id="emailBanner">
+                    <h2>Keep up with Protek!</h2>
+                    <p>Join our email list and be the first 
+                    to hear about special offers, 
+                            newest styles and crazy good deals.</p>
+                    <hr>
+                </div>
+                <div id="emailBar">
+                <input name="w" type="text" onblur="if(this.value == '') this.value = 'Enter Email here to join';" onfocus="if(this.value == 'Enter Email here to join') this.value='';" value="Enter Email here to join" id="emailBar" autocomplete="off"> <div id="emailButton"><button type="button">Join</button></div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section-colored -->
+
+    
+
+    <div class="section" style="background-image:url(images/background3.png);" id="huy">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="bboy.html"><img class="img-circle img-responsive text-center" src="images/bboy.png"></a>
+                    <a href="bboy.html" style="text-decoration: none"><h1 class="subtext">Baby Boy</h1></a>
+                    <p class= "subParagraph">Size 3 Month to 5 years</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="boy.html"><img class="img-circle img-responsive" src="images/boy.png"></a>
+                    <a href="boy.html" style="text-decoration: none"><h1 class="subtext">Boy</h1></a>
+                    <p class= "subParagraph">Size 4-14</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="bgirl.html"><img class="img-circle img-responsive" src="images/bgirl.png"></a>
+                    <a href="bgirl.html" style="text-decoration: none"><h1 class="subtext">Baby Girl</h1></a>
+                    <p class= "subParagraph">Size 3 Month to 5 years</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="girl.html"><img class="img-circle img-responsive" src="images/girl.png"></a>
+                    <a href="girl.html" style="text-decoration: none"><h1 class="subtext">Girl</h1></a>
+                    <p class= "subParagraph">Size 4-14</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->    
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/modern-business.js"></script>
+</form>
+</body>
+
+</html>

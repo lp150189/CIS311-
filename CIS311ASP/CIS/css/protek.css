@@ -1,0 +1,73 @@
+#navigationBar{
+}
+#myCarousel
+{
+	height: 400px;
+}
+.listItem
+{
+	text-align: right;
+	background-color: black;
+	color: white;
+}
+
+.dropdown-menu{
+	background-color: black;
+}
+#pictureMenu div{
+	display: inline;
+	position: relative;
+	left:150px;
+	top:-50px;
+}
+.menuPic
+{
+	border-style:solid;
+	border-width:5px;
+	border-color: black;
+}
+#picMenuText{
+	position: relative;
+	left:140px;
+	top:-50px;
+}
+#contactTab{
+	
+}
+#emailAsking{
+	height: 200px;
+}
+#emailBar
+{
+	position: relative;
+	top:-30px;
+}
+#emailBanner
+{
+	position: relative;
+	top:-30px;
+}
+#emailButton
+{
+	position: relative;
+	top:-57px;
+	left:100px;
+}
+#clock
+{
+	width: 70px;
+	height: 40px;
+	color:white;
+}
+#navigationBar2
+{
+	position: relative;
+	left:-150px;
+	top:-8px;
+
+}
+#navigationBar3
+{
+	position: relative;
+	left:-100px;
+	top:-8px;
