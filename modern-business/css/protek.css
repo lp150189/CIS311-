@@ -53,3 +53,22 @@
 	top:-57px;
 	left:100px;
 }
+#clock
+{
+	width: 70px;
+	height: 40px;
+	color:white;
+}
+#navigationBar2
+{
+	position: relative;
+	left:-150px;
+	top:-8px;
+
+}
+#navigationBar3
+{
+	position: relative;
+	left:-100px;
+	top:-8px;
+}
