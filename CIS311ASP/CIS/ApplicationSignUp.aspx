@@ -43,6 +43,12 @@
             return false;
         }
     }
+
+    protected void submitDatabase(object sender, EventArgs e)
+    {
+        
+    }
+ 
 </script>
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">

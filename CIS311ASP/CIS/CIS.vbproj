@@ -61,6 +61,10 @@
   <ItemGroup>
     <Content Include="404.html" />
     <Content Include="about.html" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="bboy.html" />
     <Content Include="bgirl.html" />
     <Content Include="blog-home-1.html" />
