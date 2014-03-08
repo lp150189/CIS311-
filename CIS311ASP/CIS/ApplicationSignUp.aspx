@@ -52,7 +52,7 @@
             {
                 cmd.Connection = conn;
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "INSERT INTO Table Values (@Email,@Password,@Profession,@Gender)";
+                cmd.CommandText = "INSERT INTO [Table] Values (@Email,@Password,@Profession,@Gender)";
                 cmd.Parameters.AddWithValue("@Email", email);
                 cmd.Parameters.AddWithValue("@Password", password);
                 cmd.Parameters.AddWithValue("@Profession", profession);
