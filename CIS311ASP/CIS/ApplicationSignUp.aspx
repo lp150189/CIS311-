@@ -1,18 +1,22 @@
 ﻿
 <%@ Page Language="c#" AutoEventWireup="false"  Inherits="CIS.ApplicationSignUp" %>
 <%@ Import Namespace="System.Net.Mail" %> 
+ <%@ Import Namespace="System.Web.Configuration" %>
 <script  runat="server">
 
     protected void submit(object sender, EventArgs e)
     {
         String output;
-        Boolean check = false;
+        String email;
+        String password;
+        String gender;
+        String profession;
         if (IsValid(useremail.Text) == false)
         {
             outputLabel.Text = "Wrong Email";
             return;
         }
-        else if(userpass.Text != userpass2.Text)
+        else if (userpass.Text != userpass2.Text)
         {
             outputLabel.Text = "Password Doesn't Match";
             return;
@@ -20,17 +24,66 @@
         output = "UserName: " + useremail.Text + "<br />"
             + "UserPass: " + userpass.Text + "<br />"
             + "Profession: " + drop1.SelectedItem + "<br />";
-        if(male.Checked==true)
+        if (male.Checked == true)
         {
             output += "Gender: Male";
+            gender = "Male";
         }
         else
         {
             output += "Gender: Female";
+            gender = "Female";
         }
+        email = useremail.Text;
+        password = userpass.Text;
+
+        profession = drop1.SelectedItem.Text;
         //output = output.Replace("@", System.Environment.NewLine);
-        outputLabel.Text =output;
+        outputLabel.Text = output;
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["huyString"].ConnectionString;
+        System.Data.SqlClient.SqlConnection conn = null;
+        try
+        {
+            conn = new System.Data.SqlClient.SqlConnection(connString);
+            conn.Open();
+
+
+            using (System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand())
+            {
+                cmd.Connection = conn;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "INSERT INTO Table Values (@Email,@Password,@Profession,@Gender)";
+                cmd.Parameters.AddWithValue("@Email", email);
+                cmd.Parameters.AddWithValue("@Password", password);
+                cmd.Parameters.AddWithValue("@Profession", profession);
+                cmd.Parameters.AddWithValue("@Gender", gender);
+
+                int rowAffected = cmd.ExecuteNonQuery();
+                if (rowAffected == 1)
+                {
+                    useremail.Text = "";
+                    userpass.Text = "";
+                    drop1.SelectedIndex = -1;
+                    //Alert the user the record got saved
+
+                }
+                else
+                {
+                    //Alert the user the thing not got saved
+                }
+            }
+        }
+        catch (System.Data.SqlClient.SqlException sqlException)
+        {
+            System.Console.Write(sqlException.Message);
+            
+            //Alert user
+            outputLabel.Text = "I'm a bitchh";
+        }
     }
+    
+        
+    
     public bool IsValid(string emailaddress)
     {
         try

@@ -18,3 +18,13 @@ C:\Users\Huy Le\Desktop\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.vbproj.GenerateResou
 C:\Users\Huy Le\Desktop\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.dll
 C:\Users\Huy Le\Desktop\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.xml
 C:\Users\Huy Le\Desktop\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.pdb
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\bin\CIS.dll.config
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\bin\CIS.dll
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\bin\CIS.pdb
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\bin\CIS.xml
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.vbprojResolveAssemblyReference.cache
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.Resources.resources
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.vbproj.GenerateResource.Cache
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.dll
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.xml
+C:\Users\lp150_000\Desktop\cis311\CIS311-\CIS311ASP\CIS\obj\Debug\CIS.pdb
