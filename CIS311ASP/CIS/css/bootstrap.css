@@ -152,9 +152,11 @@ button,
 input,
 select,
 textarea {
-  margin: 0;
   font-family: inherit;
   font-size: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 button,
@@ -1637,6 +1639,7 @@ pre code {
 table {
   max-width: 100%;
   background-color: transparent;
+    margin-right: 214px;
 }
 
 th {

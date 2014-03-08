@@ -6,7 +6,7 @@
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        SqlDataSource1.SelectCommand = "select * from [Table] where " & DropDownList1.SelectedValue & " like '%" & TextBox1.Text & "%'"
+        SqlDataSource1.SelectCommand = "select * from [Table] where " & DropDownList1.SelectedValue & " like '%" & TextBox1.Text & "%' AND " & DropDownList2.SelectedValue & " like '%" & TextBox2.Text & "%'"
         SqlDataSource1.DataBind()
     End Sub
 
@@ -14,4 +14,5 @@
         SqlDataSource1.SelectCommand = "select * from [Table]"
         SqlDataSource1.DataBind()
     End Sub
+
 End Class

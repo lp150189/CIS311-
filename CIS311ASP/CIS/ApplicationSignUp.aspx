@@ -161,6 +161,8 @@
                     </li>
                      <li><a href="signIn.html">Sign In</a>
                     </li>
+                    <li><a href="WebForm3.aspx">Administration</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
